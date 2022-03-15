@@ -19,6 +19,10 @@ body {
 } */
 
 /* Drum Machine Visuals */
+h1{
+    font-size: 2rem;
+}
+
 
 h3{
     color:aliceblue;
@@ -38,12 +42,15 @@ h3{
 }
 
 .drum__main{
-    /* border: 1px solid red; */
+    /* border: 1px solid #86418C; */
     background-color: #1F1F1F;
+    border-radius: 5px;
     min-height: 300px;
+    margin: 5px;
     max-height: 100%;
-    width: 100%;
     max-width: 700px;
+    padding: 5px;
+    width: 100%;
 }
 
 .drum__name{
@@ -75,6 +82,63 @@ h3{
 .drum__btn:hover{
     cursor: pointer;
 }
+
+.drum__btn h1{
+    display: none;
+}
+
+/* BUTTONS ON HOVER */
+
+.drum__btn__01:hover h1{
+    color: #ffed4f7a;
+    display:block;
+}
+
+
+.drum__btn__02:hover h1{
+    color: #fff59d93;
+    display:block;
+}
+
+.drum__btn__03:hover h1{
+    color: #13ffc081;
+    display:block;
+}
+
+.drum__btn__04:hover h1{
+    color: #a1ffe681;
+    display:block;
+}
+
+.drum__btn__05:hover h1{
+    color: #ff306086;
+    display:block;
+}
+
+.drum__btn__06:hover h1{
+    color: #ff8ca785;
+    display:block;
+}
+
+.drum__btn__07:hover h1{
+    color: #c281d986;
+    display:block;
+}
+
+.drum__btn__08:hover h1{
+    color: #cd9ae180;
+    display:block;
+}
+
+/* BUTTONS ON CLICK */
+
+.drum__btn:active h1{
+    opacity: 25%;
+}
+
+/* .drum__btn:active{
+    box-shadow: 5px 10px white;
+} */
 
 .drum__btn__01:active{
     border: 2px solid #ffed4f;
