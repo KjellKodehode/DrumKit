@@ -6,9 +6,10 @@
 }
 
 body {
-    margin: 0 auto;
+    background-color:#cecece;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
     /* position: relative; */
 }
 
@@ -22,7 +23,6 @@ body {
 h1{
     font-size: 2rem;
 }
-
 
 h3{
     color:aliceblue;
@@ -67,7 +67,7 @@ h3{
     grid-template-rows: 48% 48%;
     justify-content: space-around;
     margin: 1%;
-    padding: 1%;
+    padding: 5% 1%;
     row-gap: 10px;
 }
 
@@ -93,7 +93,6 @@ h3{
     color: #ffed4f7a;
     display:block;
 }
-
 
 .drum__btn__02:hover h1{
     color: #fff59d93;
@@ -136,9 +135,10 @@ h3{
     opacity: 25%;
 }
 
-/* .drum__btn:active{
-    box-shadow: 5px 10px white;
-} */
+.drum__btn:active{
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
 
 .drum__btn__01:active{
     border: 2px solid #ffed4f;
@@ -175,6 +175,56 @@ h3{
 .drum__button__name{
     margin: 0;
 }
+
+.animation_a{
+    border: 2px solid #ffed4f;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_s{
+    border: 2px solid #fff59d;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_d{
+    border: 2px solid #13ffc1;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_f{
+    border: 2px solid #a1ffe6;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_h{
+    border: 2px solid #ff305f;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_j{
+    border: 2px solid #ff8ca6;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_k{
+    border: 2px solid #c081d9;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+.animation_l{
+    border: 2px solid #cd9ae1;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
+    transform: scale(1.1);
+}
+
+/* MEDIA */
 
 @media (min-width: 400px){
     .drum__main{
