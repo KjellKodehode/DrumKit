@@ -12,18 +12,38 @@ body {
     /* position: relative; */
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;
-}
+    max-height: 100%;
+} */
 
 /* Drum Machine Visuals */
 
+h3{
+    color:aliceblue;
+    text-align: center;
+    text-shadow: 
+        1px 1px 2px rgb(0, 255, 242), 
+        0 0 1em blue, 0 0 0.2em blue;
+}
+
+.drum__bottom__name{
+    transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    transform:rotateY(180deg);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+
 .drum__main{
     /* border: 1px solid red; */
-    background-color: dimgray;
-    height: 500px;
-    width: 900px;
+    background-color: #1F1F1F;
+    min-height: 300px;
+    max-height: 100%;
+    width: 100%;
+    max-width: 700px;
 }
 
 .drum__name{
@@ -31,15 +51,88 @@ img {
 }
 
 .drum__main__buttons{
-    border: 1px solid red;
+    border: 2px solid #f0f8ff;
+    border-radius: 2%;
     column-gap: 1%;
     display:grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px;
+    height: 75%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 48% 48%;
     justify-content: space-around;
+    margin: 1%;
+    padding: 1%;
     row-gap: 10px;
+}
+
+.drum__btn{
+    background-color: #1F1F1F;
+    border-left: 1px solid #3D488D;   
+    border-top: 1px solid #3D488D;
+    border-right: 1px solid #1f233b;
+    border-bottom: 1px solid #1f233b;
+    border-radius: 5%;
+}
+.drum__btn:hover{
+    cursor: pointer;
+}
+
+.drum__btn__01:active{
+    border: 2px solid #ffed4f;
+}
+
+.drum__btn__02:active{
+    border: 2px solid #fff59d;
+}
+
+.drum__btn__03:active{
+    border: 2px solid #13ffc1;
+}
+
+.drum__btn__04:active{
+    border: 2px solid #a1ffe6;
+}
+
+.drum__btn__05:active{
+    border: 2px solid #ff305f;
+}
+
+.drum__btn__06:active{
+    border: 2px solid #ff8ca6;
+}
+
+.drum__btn__07:active{
+    border: 2px solid #c081d9;
+}
+
+.drum__btn__08:active{
+    border: 2px solid #cd9ae1;
 }
 
 .drum__button__name{
     margin: 0;
 }
+
+@media (min-width: 400px){
+    .drum__main{
+        height: 400px;
+    }
+}
+
+@media (min-width: 500px){
+    .drum__main{
+        height: 500px;
+    }
+}
+
+@media (min-width: 600px){
+    .drum__main{
+        height: 600px;
+    }
+}
+
+@media (min-width: 700px){
+    .drum__main{
+        max-height: 700px;
+    }
+}
+
