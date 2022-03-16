@@ -13,9 +13,6 @@ body {
 }
 
 /* Drum Machine Visuals */
-h1{
-    font-size: 2rem;
-}
 
 h3{
     color:aliceblue;
@@ -26,9 +23,6 @@ h3{
 }
 
 .drum__bottom__name{
-    transform:rotateY(180deg);
-    transform:rotateY(180deg);
-    transform:rotateY(180deg);
     transform:rotateY(180deg);
     unicode-bidi:bidi-override;
     direction:rtl;
@@ -71,97 +65,42 @@ h3{
     border-bottom: 1px solid #1f233b;
     border-radius: 5%;
 }
-.drum__btn:hover{
-    cursor: pointer;
+
+.drum__btn{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.drum__btn h1{
-    display: none;
-}
-
-/* BUTTONS ON HOVER */
-
-.drum__btn__01:hover h1{
+.drum__btn__01{
     color: #ffed4f7a;
-    display:block;
 }
 
-.drum__btn__02:hover h1{
+.drum__btn__02{
     color: #fff59d93;
-    display:block;
 }
 
-.drum__btn__03:hover h1{
+.drum__btn__03{
     color: #13ffc081;
-    display:block;
 }
 
-.drum__btn__04:hover h1{
+.drum__btn__04{
     color: #a1ffe681;
-    display:block;
 }
 
-.drum__btn__05:hover h1{
+.drum__btn__05{
     color: #ff306086;
-    display:block;
 }
 
-.drum__btn__06:hover h1{
+.drum__btn__06{
     color: #ff8ca785;
-    display:block;
 }
 
-.drum__btn__07:hover h1{
+.drum__btn__07{
     color: #c281d986;
-    display:block;
 }
 
-.drum__btn__08:hover h1{
+.drum__btn__08{
     color: #cd9ae180;
-    display:block;
-}
-
-/* BUTTONS ON CLICK */
-
-.drum__btn:active h1{
-    opacity: 25%;
-}
-
-.drum__btn:active{
-    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 25%);
-    transform: scale(1.1);
-}
-
-.drum__btn__01:active{
-    border: 2px solid #ffed4f;
-}
-
-.drum__btn__02:active{
-    border: 2px solid #fff59d;
-}
-
-.drum__btn__03:active{
-    border: 2px solid #13ffc1;
-}
-
-.drum__btn__04:active{
-    border: 2px solid #a1ffe6;
-}
-
-.drum__btn__05:active{
-    border: 2px solid #ff305f;
-}
-
-.drum__btn__06:active{
-    border: 2px solid #ff8ca6;
-}
-
-.drum__btn__07:active{
-    border: 2px solid #c081d9;
-}
-
-.drum__btn__08:active{
-    border: 2px solid #cd9ae1;
 }
 
 .drum__button__name{

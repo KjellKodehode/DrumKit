@@ -1,16 +1,16 @@
-numberOfButtons = document.querySelectorAll(".drum__btn").length;
+let numbersOfButtons = document.querySelectorAll(".drum__btn").length;
 
-for (let i = 0; i < numberOfButtons; i++){
+for (let i = 0; i < numbersOfButtons; i ++){
 
-document.querySelectorAll("button")[i]
-    .addEventListener("click", function(){
+    document.querySelectorAll(".drum__btn")[i]
+    .addEventListener("click", function() {
         let buttonStyle = this.innerHTML;
         sound(buttonStyle);
         animation(buttonStyle);
-    });
+    })
 }
 
-document.addEventListener("keypress", function(event){
+document.addEventListener("keypress", function(event) {
     sound(event.key);
     animation(event.key);
 })
@@ -53,21 +53,21 @@ function sound(key) {
         break;
 
         case "l":
-            var sound7 = new Audio('DrumSounds/tom.wav');
-            sound7.play();
-            break;
+        let sound8 = new Audio('DrumSounds/tom.wav');
+        sound8.play();
+        break;
     
         default: console.log(key);
     }
-    }
+}       
 
 function animation(currentKey) {
     let activeButton = document.querySelector("." + currentKey);
-        
-    activeButton.classList.add("animation_" + currentKey,);
+    
+    activeButton.classList.add("animation_" + currentKey);
     
     setTimeout(function() {
         activeButton.classList.remove("animation_" + currentKey);
     }, 100);
     }
-        
+    
